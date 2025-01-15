@@ -1,0 +1,108 @@
+/* 全体を中央揃えに */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 残り金額部分 */
+.remaining-info {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 18px;
+  width: 500px; /* 固定幅 */
+  height: 50px; /* 固定高さ */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out; /* 背景のなめらかな更新 */
+  color: black; /* テキスト色を黒に設定 */
+}
+
+/* その他の部分 */
+.budget-info,
+.total-info {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 18px;
+  width: 500px; /* 固定幅 */
+  height: 50px; /* 固定高さ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* 合計金額用 */
+.total-info {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* リセットボタン */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+/* メニューコンテナ */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* メニュー項目 */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 200px;
+  background-color: #b7e4b8;
+  color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* メニューアイテムの画像 */
+.menu-item img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* セクションタイトル */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
